@@ -1,0 +1,95 @@
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #18191A;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1 {
+    font-size: 3em;
+    font-family: 'Open Sans', sans-serif;
+    color: #ffffff;
+    text-shadow: 2px 2px rgba(128, 128, 128, 0.9);
+}
+
+.jogodavelha {
+    width: 600px;
+    height: 600px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin-top: 50px;
+}
+
+.top1, .mid1 {
+    border-right: 2px solid #FFFFFF;
+    border-bottom: 2px solid #FFFFFF;;
+}
+.bottom1 {
+    border-right:2px solid #FFFFFF;;
+}
+
+.top2, .mid2 {
+    border-right:2px solid #FFFFFF;;
+    border-bottom: 2px solid #FFFFFF;;
+}
+
+.top3, .mid3 {
+    border-bottom:2px solid #FFFFFF;;
+}
+
+.bottom2 {
+    border-right:2px solid #FFFFFF;;
+}
+
+.controles {
+    width: 600px;
+    height: 50px;
+    line-height: 50px;
+    display: flex;
+    justify-content:space-around;
+    margin-top: 20px;
+    color:#ffffff;
+}
+
+.vez, .vencedor {
+    display: flex;
+}
+
+.jogador_vez, .jogador_vencedor {
+    margin-left: 15px;
+}
+
+.reset_game {
+    padding: 10px 15px;
+    border-radius: 10px;
+    background-color:#167fe7;
+    color:#ffffff;
+    cursor: pointer;
+}
+.top1,.top2,.top3,.mid1,.mid2,.mid3, .bottom1,.bottom2,.bottom3 {
+    width: 200px;
+    height: 200px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 120px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:#FFFFFF;
+}
+
+.top1:hover,.top2:hover,.top3:hover,.mid1:hover,.mid2:hover,.mid3:hover,.bottom1:hover,.bottom2:hover,.bottom3:hover {
+    background-color: #a7a7a73f;
+}
